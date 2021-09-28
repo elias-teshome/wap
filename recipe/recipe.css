@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("images/silverware.jpg");
+    
+}
+.firstpart,.secondpart, .thirdpart,.usercommit{
+  
+    padding: 10px 10px ;
+
+}
+#title
+{
+   background-color: #f0f0f0;
+   color: #A4A400 ;
+   font-family: Lucida Sans Unicode, Helvetica, Arial, sans-serif;
+   font-size: 22pt;
+   font-weight: bold;
+   text-align: center;
+
+}
+h1 {
+    font-size: 18pt;
+    text-align: left;
+    background-color: #f0f0f0;
+    color: #A4A400 ;
+    font-family: Lucida Sans Unicode, Helvetica, Arial, sans-serif;
+    
+  
+
+}
+.secondpart li
+{
+    list-style-image: url("images/pie_bullet.png");
+}
+.contents-list ,.copyright-list
+{
+    list-style: none;
+}
+.comments-list li
+{
+    list-style-type: none;
+}
+.comments-list>li>ul
+{
+    background-color: #FFFFA8;
+}
+.comments-list
+{
+    margin-left: 20px;
+    margin-right: 100px;
+}
+
+.copy{
+    text-align: left;
+    padding-left: 900px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#validator{
+
+    text-align: right;
+}
