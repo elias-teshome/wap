@@ -2,6 +2,12 @@ body{
     margin: 0;
     padding: 0;
     background-image: url("images/silverware.jpg");
+    font-size: 11pt;
+    background-color: white;
+    color: #404040;
+    font-family: Georgia,Garamond, serif;
+
+
     
 }
 .firstpart,.secondpart, .thirdpart,.usercommit{
@@ -59,4 +65,7 @@ h1 {
 #validator{
 
     text-align: right;
+}
+a{
+    color: #A4A400 ;
 }
