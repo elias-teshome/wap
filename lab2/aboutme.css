@@ -1,0 +1,27 @@
+body{
+    background-color:dimgray;
+    color: white;
+}
+hr{
+    color: black;
+}
+#img1,#img2
+{
+
+  height: 400px;
+  width: 400px;
+
+}
+h1{
+    color: #A4A400 ;
+    font-family: 'Times New Roman', Times, serif;
+}
+#title
+{
+    font-size: xx-large;
+    text-align: center;
+
+}
+a{
+    color: red;
+}
