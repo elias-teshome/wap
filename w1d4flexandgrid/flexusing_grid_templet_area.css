@@ -1,22 +1,23 @@
-body
-{
-  display: grid;
-  grid-template-columns: auto;
+*{
+    box-sizing: border-box;
+    padding: 0;
+
 }
-header
+.header
 {
     text-align: center;
     padding: 15px;
     background-color:powderblue;
+    grid-area: header;
 }
-
-nav
+.nav
 {
   display: flex;
   background-color: darkslategrey;
   color: white;
   flex-direction: row;
   padding: 0;
+  grid-area: nav;
   
 }
 nav>p{
@@ -26,6 +27,7 @@ nav>p{
     border-right: solid black 1px;
     text-align: center;
 }
+
 .container
 {
    display: flex;
@@ -39,6 +41,7 @@ nav>p{
     height: 210px;
     flex-grow: 1;
     order: 1;
+    grid-area: column1;
     
 
 }
@@ -48,6 +51,7 @@ nav>p{
     height: 210px;
     flex-grow: 2;
     order: 2;
+    grid-area: column2;
    
 }
 
@@ -57,6 +61,7 @@ nav>p{
     height: 210px;
     flex-grow: 1;
     order: 3;
+    grid-area: column3;
 }
 p
 {
@@ -70,47 +75,9 @@ footer
     background-color: darkslategrey;
     height: 20px;
 }
-@media screen and (max-width:600px){
 
-.container
-{
-    display: flex;
-    
-    flex-flow:row wrap;
-}
-.column1
-{
-    background-color:lightslategray;
-    height: 100px;
-    flex-grow: 1;
-    order: 1;
-  
-   
-}
-.column2
-{
-    background-color: darkgray;
-    height: 100px;
-    flex-grow: 3;
-    order: 3;
-    width: 100%;
-    
-    
-
-}
-
-.column3
-{
-    background-color: lightgray;
-    height: 100px;
-    flex-grow: 1;
-    order: 2;
-    
+.body
+{ 
+    display: grid;
     
 }
-
-    
-}
-
-
-
