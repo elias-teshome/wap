@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular expresion</title>
+    <link rel="stylesheet" href="reindex.css">
+</head>
+
+<body>
+    <form>
+
+        <label>Email address</label>
+        <input type="text" placeholder="Enter email">
+        <p>We'll never share your email with anyone else.</p>
+        <label>Another input</label>
+        <input type="text" pattern="https?://.+" title="Please enter a URL" />
+        <label>Password</label>
+        <input type="password" placeholder="Password" required minlength="10" pattern="(?=.*[a-z]+)(?=.*[A-Z]+)(?=.*[0-9]+).*"
+        " title="Must contain at least one number and one uppercase and
+        lowercase letter, and at least 10 or more charachter>
+        <label><input type="checkbox"> Check me out</label>
+        <div><input type="submit" value="Submit"></div>
+
+    </form>
+
+</body>
+</html>
