@@ -4,7 +4,7 @@ const router= express.Router();
 
 
 //redirect to /result
-router.post('/' , (req, res) => {
+router.post('/result' , (req, res) => {
     let name = req.body.name;
     let age = req.body.age;
     if (!name) {

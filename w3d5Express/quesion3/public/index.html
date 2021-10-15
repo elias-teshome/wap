@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html>
-  
+   <head>
+    <link rel="stylesheet" href="night.css">
+       <script>
+            const date=new Date();
+            const hour=date.getHours();
+            var theme = document.getElementsByTagName('link')[0];
+
+            if( hour>=6&&hour<=18){
+                theme.setAttribute('href', '/css/day.css');
+            }else{
+                theme.setAttribute('href', '/css/night.css'); 
+            }
+       </script>
+   </head>
 <body>
 
 <h2>HTML Forms</h2>
+
 
 <form action='/result' method='POST'>
     <div style="display: flex; flex-direction: row; column-gap: 10px;">
@@ -14,6 +28,7 @@
   <input type="submit" value="Submit">
 </div>
 </form> 
+
 
 
 </body>
