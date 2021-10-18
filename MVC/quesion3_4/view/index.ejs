@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Product</title>
+</head>
+<body>
+    <h1>Products</h1>
+    <p><%products%></p>
+    <ul>
+        <% for(let pro of products){ %>
+         <li>Name: <%=pro.getName()%></li>
+           <ul>
+               <li>Price: <%=pro.getPrice()%></li>
+               <li>Description:<%=pro.getDescription()%></li>
+               <li>
+                <form action="/cart" method="POST">
+                    <input type="hidden" name="id" value="<%=pro.getId()%>">
+                    <input type="submit" value="Add to cart">
+                </form>
+               </li>
+           </ul>
+        <%}%>
+    </ul>
+</body>
+</html>

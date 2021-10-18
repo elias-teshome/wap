@@ -71,6 +71,9 @@ app.use(express.static(path.join(__dirname,'public')));
 
 // })
 
+//body parser middleware
+app.use(express.json());//handel json
+app.use(express.urlencoded({extended:false})) //handle url encoded data for form submition
 
 app.use('/api/members',require('./routes/api'))
 
